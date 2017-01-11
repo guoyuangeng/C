@@ -20,14 +20,13 @@
 #include"list.h"
 #include"classmates.h"
 
-typedef struct T_Classmates
-{
+typedef struct T_Classmates{
     char *name;
     int age;
     int number;
     struct T_Classmates* pre;
     struct T_Classmates* next;
-} T_Classmates, *PT_Classmates;
+}T_Classmates, *PT_Classmates;
 
 PT_Classmates creat_one_node(void);
 void init_one_node(PT_Classmates ptClassmates);
